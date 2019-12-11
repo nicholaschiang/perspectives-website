@@ -1,0 +1,44 @@
+{
+  "name": "perspectives-website",
+  "version": "0.0.1",
+  "description": "Website outlining various perspectives on the ongoing Israeli-Palestinian conflict.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicholaschiang/perspectives-website.git"
+  },
+  "keywords": [
+    "Israeli",
+    "Palestinian",
+    "Conflict",
+    "History",
+    "Websites"
+  ],
+  "author": "Nicholas Chiang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nicholaschiang/perspectives-website/issues"
+  },
+  "homepage": "https://github.com/nicholaschiang/perspectives-website#readme",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.0",
+    "extract-loader": "^1.0.2",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^6.0.4",
+    "webpack": "^3.0.0"
+  }
+}
