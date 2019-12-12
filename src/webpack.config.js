@@ -32,7 +32,7 @@ function getStyleUse(bundleFilename) {
 module.exports = [{
         entry: {
             'bundle.min.css': [
-                path.resolve(__dirname, 'styles/main.scss'),
+                path.resolve(__dirname, 'styles/style.css'),
             ]
         },
         output: {
@@ -82,7 +82,7 @@ module.exports = [{
     {
         entry: {
             'bundle.min.js': [
-                path.resolve(__dirname, 'scripts/main.js'),
+                path.resolve(__dirname, 'scripts/script.js'),
             ]
         },
         output: {

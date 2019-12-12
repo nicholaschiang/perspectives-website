@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Exo+2:400,700&subset=cyrillic);html {
+@import url("https://fonts.googleapis.com/css?family=Exo+2:400,700&subset=cyrillic");
+html {
   box-sizing: border-box;
 }
 
