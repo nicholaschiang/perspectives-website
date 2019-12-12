@@ -13,15 +13,18 @@ function read() {
         events.push({
             source: $(this).find('.source').text(),
             date: last(last($(this).find('.date').text().split(' ')).split('-')),
-            content: $(this).clone().children().remove().end().text(),
+            content: $(this).clone().children().remove().end().text().trim()
+                .replace(new RegExp('"', 'g'), '')
+                .replace(/(?:\r\n|\r|\n)/g, '<br>'),
         });
     });
     return events;
 };
 
 function write(events) {
-    const $ = cheerio.load('<div id="events"></div>');
+    const $ = cheerio.load('<ul id="nav"></ul><div id="events"></div>');
     events.forEach((event) => {
+        $('#nav').append('<li><span>' + event.date + '</span></li>');
         $('#events').append('<h2 class="milestone">' + event.date + '</h2>');
         $('#events').append('<p>' + event.content + '</p>');
         $('#events').append('<p class="source">' + event.source + '</p>');
