@@ -25,6 +25,8 @@
   },
   "homepage": "https://github.com/nicholaschiang/perspectives-website#readme",
   "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "fs": "0.0.1-security",
     "jquery": "^3.4.1"
   },
   "devDependencies": {
@@ -39,6 +41,7 @@
     "node-sass": "^4.11.0",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^6.0.4",
+    "url-loader": "^3.0.0",
     "webpack": "^3.0.0"
   }
 }

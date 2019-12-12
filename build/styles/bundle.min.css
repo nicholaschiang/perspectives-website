@@ -11,12 +11,18 @@
 body {
   font-family: 'Exo 2', sans-serif;
   line-height: 1.5;
+  color: #fff;
 }
 
 .wrapper {
   margin: 0 auto;
   padding: 0 16.66% 50px;
   width: 100%;
+}
+
+.source {
+  font-size: 12px;
+  margin-top: -5px;
 }
 
 article {
@@ -41,7 +47,7 @@ article {
   padding-left: 0;
   list-style-type: none;
   color: #bfc1c3;
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.3);
   cursor: pointer;
   transition: all .3s ease-out;
 }
@@ -53,5 +59,15 @@ article {
           transform: scale(1.2);
 }
 .timeline__nav ul li:hover {
-  color: #000;
+  color: #fff;
+}
+.title {
+  text-align: center;
+  color: #fff;
+}
+body {
+  background-image: url(e670e56b109cca2df45aaafd3732de33.jpg);
+  background-position: bottom left;
+  background-attachment: fixed;
+  background-size: 100%;
 }

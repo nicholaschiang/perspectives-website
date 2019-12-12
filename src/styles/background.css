@@ -1,0 +1,6 @@
+body {
+  background-image: url('background.jpg');
+  background-position: bottom left;
+  background-attachment: fixed;
+  background-size: 100%;
+}

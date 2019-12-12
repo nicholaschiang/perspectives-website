@@ -32,7 +32,9 @@ function getStyleUse(bundleFilename) {
 module.exports = [{
         entry: {
             'bundle.min.css': [
-                path.resolve(__dirname, 'styles/style.css'),
+                path.resolve(__dirname, 'styles/timeline.css'),
+                path.resolve(__dirname, 'styles/header.css'),
+                path.resolve(__dirname, 'styles/background.css'),
             ]
         },
         output: {
@@ -61,6 +63,13 @@ module.exports = [{
                     use: ExtractTextPlugin.extract({
                         use: 'css-loader'
                     })
+                },
+                {
+                    test: /\.(png|jpg)$/,
+                    loader: 'url-loader',
+                    options: {
+                        limit: 10,
+                    },
                 },
                 {
                     test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
